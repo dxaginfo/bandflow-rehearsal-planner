@@ -1,0 +1,38 @@
+{
+  "name": "bandflow-rehearsal-planner",
+  "version": "1.0.0",
+  "description": "Web application for scheduling, tracking, and optimizing band rehearsals.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/bandflow-rehearsal-planner.git"
+  },
+  "keywords": [
+    "band",
+    "rehearsal",
+    "scheduling",
+    "music",
+    "attendance",
+    "tracking"
+  ],
+  "author": "DX ag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/bandflow-rehearsal-planner/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/bandflow-rehearsal-planner#readme",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
